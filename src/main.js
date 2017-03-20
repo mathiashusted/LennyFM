@@ -1,3 +1,7 @@
+/*
+LennyFM 0.9.1
+*/
+
 const Discord = require("discord.js");
 const yt = require("ytdl-core");
 const config = require("./config.json");
@@ -20,8 +24,8 @@ var actions = {
         voiceChannel = m.member.voiceChannel;
         if (typeof(voiceChannel) != "undefined") {
             voiceChannel.join().then((connection) => {
-            console.log(`LennyFM has joined ${voiceChannel.name}...`);
-            if (config.notifications == true) {
+                console.log(`LennyFM has joined ${voiceChannel.name}...`);
+                if (config.notifications == true) {
                 if (config.shufflePlaylist == true) playlistOrder = shuffle(playlistOrder);
                 m.channel.sendMessage(`Joined ${voiceChannel.name}`);
             }});
