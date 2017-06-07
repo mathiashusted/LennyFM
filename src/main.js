@@ -254,4 +254,4 @@ function shuffle(array) {
     return array;
 }
 
-client.login("MjgyMjMwMDQ2OTY0NTgwMzUy.C4jeug.jJsza-DghJTi9IaeJUYi6E3GoV8");
+client.login("token");
